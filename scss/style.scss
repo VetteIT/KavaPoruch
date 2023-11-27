@@ -2766,7 +2766,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('path_to_your_image.jpg') no-repeat center center;
     background-size: cover;
     z-index: 1;
 }
@@ -2866,6 +2865,7 @@ body {
         padding: 22px 35px;
     }
     .package__block {
+        
         .p_block-content {
             padding-top: 29px;
             .p_cont_title {
@@ -2875,8 +2875,9 @@ body {
         &:hover {
             transform: none;
             transition: transform 0s;
-            background: none;
+            background-image: url('/img/photo-1.png'); 
             border-color: rgba(217, 217, 217, 0.2);
+            
         }
     }
     .repair__type  {
@@ -2898,7 +2899,7 @@ body {
         &:hover {
             transform: none;
             transition: transform 0s;
-            background: none;
+            background-image: url('/img/photo-1.png'); 
             border-color: rgba(217, 217, 217, 0.2);
         }
     }
@@ -2928,7 +2929,7 @@ body {
         &:hover {
             transform: none;
             transition: transform 0s;
-            background: none;
+            background-image: url('/img/photo-1.png'); 
             border-color: rgba(217, 217, 217, 0.2);
         }
     }
@@ -2957,7 +2958,7 @@ body {
         &:hover {
             transform: none;
             transition: transform 0s;
-            background: none;
+            background-image: url('/img/photo-1.png'); 
             border-color: rgba(217, 217, 217, 0.2);
         }
     }
@@ -3807,16 +3808,13 @@ a {
   .custom-slider{
 	align-items: center;
 	display: flex;
-	height: 100vh;
+	height: 200vh;
 	justify-content: center;
     background: transparent;
     width: 60%; /* Take full width of the container */
     height: 300px; /* Set a fixed height for the slider */
     margin: auto; /* Center the slider horizontally */
   }
-  @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-}
 
 $animationSpeed: 40s;
 
@@ -3829,8 +3827,6 @@ $animationSpeed: 40s;
 
 // Styling
 .slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
 	height: 100px;
 	margin: auto;
 	overflow:hidden;
@@ -3933,3 +3929,98 @@ $animationSpeed: 40s;
             -70px 90px 0 rgba(0, 0, 0, 0);
   }
 }
+/* Стилі для мобільних телефонів */
+@media (max-width: 576px) {
+    .projects__container {
+        grid-template-columns: 1fr; /* Всі карточки в один рядок */
+        padding: 0 15px; /* Падінг для контейнера */
+    }
+
+    .card {
+        width: 100%; /* Карточка на всю ширину контейнера */
+        height: auto; /* Висота автоматично під контент */
+        margin-bottom: 20px; /* Відступ між карточками */
+    }
+    .projects__titles {
+        margin-bottom: 100px; /* Reduced space between the title and the cards */
+    }
+}
+
+/* Стилі для планшетів */
+@media (min-width: 576px) and (max-width: 768px) {
+    .projects__container {
+        grid-template-columns: repeat(2, 1fr); /* Дві карточки в ряд */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Відступ між карточками */
+    }
+    .projects__titles {
+        margin-bottom: 1000px; /* Reduced space between the title and the cards */
+    }
+}
+
+/* Стилі для десктопів */
+@media (min-width: 769px) {
+    .projects__container {
+        grid-template-columns: repeat(4, 1fr); /* Три карточки в ряд */
+    }
+
+}
+/* Стилі для мобільних телефонів */
+@media (max-width: 576px) {
+    .section_form {
+      width: 90%; /* Використовуємо відсотки для ширини, щоб форма була респонсивною */
+      padding: 10px; /* Зменшуємо падінги */
+    }
+  
+    .feed-form {
+      width: 100%; /* Форма розтягується на всю ширину контейнера */
+    }
+    
+    .feed-form input, .button_submit {
+      height: 40px; /* Зменшуємо висоту полів та кнопки */
+      font-size: 12px; /* Зменшуємо розмір шрифта */
+    }
+  }
+  
+  /* Стилі для планшетів */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .section_form {
+      width: 70%; /* Збільшуємо ширину форми */
+      padding: 15px; /* Збільшуємо падінги */
+    }
+  
+    .feed-form input, .button_submit {
+      height: 45px; /* Збільшуємо висоту полів та кнопки */
+      font-size: 14px; /* Повертаємо стандартний розмір шрифта */
+    }
+  }
+  
+  /* Стилі для десктопів */
+  @media (min-width: 769px) {
+    .section_form {
+      width: 30%; /* Збільшуємо ширину форми для більших екранів */
+    }
+  }
+  @media (min-width: 800px) and (max-width: 1500px) {
+    .section_form {
+      width: 70%; /* Збільшуємо ширину форми */
+      padding: 10px; /* Збільшуємо падінги */
+    }
+    .feed-form {
+        width: 90%; /* Форма розтягується на всю ширину контейнера */
+      }
+  
+    .feed-form input, .button_submit {
+      height: 45px; /* Збільшуємо висоту полів та кнопки */
+      font-size: 14px; /* Повертаємо стандартний розмір шрифта */
+    }
+  }
+  
+  /* Стилі для десктопів */
+  @media (min-width: 769px) {
+    .section_form {
+      width: 30%; /* Збільшуємо ширину форми для більших екранів */
+    }
+  }
