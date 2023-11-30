@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.126.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.33.3"></script>
+    <title>Кава Поруч</title>
+</head>
+<body>    
+    <div class="loader"></div>     
+    <div id="particles-js"></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__row">
+                    <div class="header__logo"><a href="index.html"><img src="img/coffee-bean.svg" alt="logo"></a></div>
+                    <nav class="header__menu">
+                        <ul class="menu__list">
+                            <li><a href="" class="active__menu_list">Головна</a></li>
+                            <li><a href="#projects" class="list__item">Каталог кав'ярень</a></li>
+                            <li><a href="#offers" class="list__item">Гарячі пропозиції</a></li>
+                            <li><a href="#interesting-facts" class="list__item">Цікаві факти</a></li>
+                            <li><a href="#reviews-section" class="list__item">Відгуки</a></li>
+                            <li><a href="#footer" class="list__item">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <p class="header__number">+38 (095)  189 02 31</p>
+                    <div class="header_burger">
+                        <ul class="menu__list">
+                            <li><a href="" class="active__menu_list">Головна</a></li>
+                            <li><a href="" class="list__item">Каталог кав'ярень</a></li>
+                            <li><a href="" class="list__item">Цікаві факти</a></li>
+                            <li><a href="" class="list__item">Відгуки</a></li>
+                            <li><a href="" class="list__item">Контакти</a></li>
+                            <li class="header__number">+38 (095)  189 02 31</li>
+                        </ul>
+                    </div>
+                    <button class="burger__button">
+                        <img src="img/menu-logo.svg" alt="menu-logo" class="open-icon">
+                        <img src="img/close-icon.svg" alt="close-icon" class="close-icon">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main_container">
+                <div class="main__row">
+                    <div class="main__col-1">
+                        <h1 class="main__title">Відкрийте для себе кращі кав'ярні поруч!</h1>
+                        <p class="main__substitle">Розкрийте для себе світ кави — з "Кава Поруч"<span class="yellow-text">кожна чашка зі знижкою 20%</span></p>
+                        <div class="main__form">
+                            <form action="Thank-page/index.html" id="myForm">
+                                <input type="text" class="phone__number number__code" name="number-phone" placeholder="+38 (---) --- -- --" onkeypress="return validate(event)" required autocomplete="off" maxlength="13">
+                                <button type="submit" class="button-send" ><img src="img/right-arrow.svg" alt="send"></button>
+                            </form>
+                        </div>
+                        <div class="main__soc">
+                            <a href="https://www.facebook.com/profile.php?id=100022649712699" class="soc__facebook"><img src="img/logo-facebook.svg" alt="facebook-logo" class="facebook-logo"></a>
+                            <a href="https://www.instagram.com/_vette_/" class="soc__instagram"><img src="img/logo-instagram.svg" alt="instagram-logo" class="instagram-logo"></a>
+                        </div>
+                    </div>
+                    <div class="main__col-2">
+                        <div class="carousel">
+                            <div class="carousel__items">
+                                <div class="carousel__item">
+                                    <img src="img/photo-1.png" alt="">
+                                </div>
+                                <div class="carousel__item">
+                                    <img src="img/photo-2.png" alt="">
+                                </div>
+                                <div class="carousel__item">
+                                    <img src="img/photo-3.png" alt="">
+                                </div>
+                                <div class="carousel__item">
+                                    <img src="img/photo-1.png" alt="" class="photo">
+                                </div>
+                                <div class="carousel__item">
+                                    <img src="img/photo-2.png" alt="">
+                                </div>
+                                <div class="carousel__item">
+                                    <img src="img/photo-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel__control">
+                                <button class="prev_slide"><img src="img/left-arrow.svg" alt="left-arrow"></button>
+                                <span class="carousel__num">01/06</span>
+                                <button class="next_slide"><img src="img/right-arrow.svg" alt="right-arrow"></button>
+                            </div>
+                        </div>
+                        <div class="link__media">
+                            <div class="media__item">
+                                <img src="img/logo-viber.svg" alt="logo-viber">
+                            </div>
+                            <div class="media__item telegram">
+                                <a href="https://t.me/nerf_Vettel"><img src="img/logo-tg.svg" alt="logo-viber"></a>
+                            </div>
+                            <div class="media__item phone">
+                                <a href="https://www.facebook.com/profile.php?id=100022649712699"><img src="img/logo-phone.svg" alt="logo-viber"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="projects__titles">Найкращі кав'ярні</h2>
+            <section class="projects section" id="projects">
+                
+                <div class="projects__container container grid">
+                    <article class="projects__card">
+                        <div class="card">
+                            <div class="content">
+                              <div class="back">
+                                <div class="back-content">
+                                    <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+                                  <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+                                  <div class="cafe-name">Шахерезада</div>
+                                  <strong>Перегорни мене</strong>
+                                </div>
+                              </div>
+                              <div class="front">
+                                <img src="img/photo-1.png" alt="Card Image" class="card-image">
+                                
+                              
+                                <div class="projects__modal">          
+                                </div>
+                                <div class="front-content">
+                                    <span class="projects__subtitle">Ресторан</span>
+                                    <p class="projects__description">Ресторан «Шахерезада» у Вінниці пропонує європейські та українські страви у східному стилі, з вегетаріанським меню, шоу-програмами і танцмайданчиком.</p>
+                                  <div class="description">
+                                    <div class="title">
+                                      <p class="title">
+                                        <a href="#" class="projects__button" data-modal-target="#carouselModal1">
+                                          Детальніше<i class="ri-external-link-line"></i>
+                                      </a>
+                                      </p>
+                                      <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                                    </div>
+                                    <p class="card-footer">
+                                    11:00-24:00 &nbsp; | &nbsp; Вінниця, вул. Київська 91
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </article>
+                    <div id="carouselModal1" class="carousel-modal">        
+                      <section>
+                        <div class="container">
+                            <div class="carousel">
+                                <button class="carousel-close" onclick="closeModal()">×</button>
+                                <input type="radio" name="slides" checked="checked" id="slide-1">
+                                <input type="radio" name="slides" id="slide-2">
+                                <input type="radio" name="slides" id="slide-3">
+                                <input type="radio" name="slides" id="slide-4">
+                                <input type="radio" name="slides" id="slide-5">
+                                <input type="radio" name="slides" id="slide-6">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/1493962806590c1036e120a_d92a972b2a722d23ba4bbec1f8e69a8c.jpg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                
+Особливості:
+1.Банкетна зала
+2.Бiзнес-ланч
+3.Жива музика
+4.Меню англiйською
+5.Парковка
+6.WiFi
+7.Їжа на винос
+8.Приймаються кредитнi карти
+9.Сніданок
+
+                                                <span class="credit">Сяючий бенкетний зал</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/1493962811590c103ba552b_547da055bcf64a8f8ad2151fc8e5add8.jpg" alt="">
+                                            </div>
+                                            <figcaption>
+                                              
+Приводи:               
+
+1.День народження  
+2.Ділова зустріч 
+3.Романтична вечеря
+4.Весілля
+5.Сімейна вечеря
+5.Новорічна ніч
+6.Новорічний корпоратив
+7.Банкети Корпоративи 
+
+                                                <span class="credit">Елегантний інтер'єр ресторану</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/1493962816590c10409940e_cdbd486d7ca9b0c8986434bcaf7fac5a.jpg" alt="">
+                                            </div>
+                                            <figcaption>
+                                             В "Шахерезаді" представлено яскравими стравами, які поєднують в собі свіжість інгредієнтів з традиційними рецептами, включно з вегетаріанськими опціями.
+                                                <span class="credit">Кулінарне мистецтво</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/150159263659807c3c42540_59807baf953061.11006336.jpeg" alt="">
+                                            </div>
+                                            <figcaption>
+                                             Зал зі сценою та танцювальним майданчиком є ідеальним місцем для проведення різноманітних шоу-програм та святкових подій.
+                                                <span class="credit">Просторий зал</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/150159265259807c4c19fc0_59807bb11458f2.16262427.jpeg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                Зал у ресторані "Шахерезада" з панорамними вікнами, що наповнюють простір природним світлом, створюючи атмосферу розкоші та комфорту.
+                                                <span class="credit">Атмосфера розкоші та комфорту/span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/150159264659807c46047e4_59807bafb76830.67626013.jpeg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                 Бенкетний зал з темно-коричневими шкіряними стільцями і білими столами, готовими прийняти гостей на ексклюзивний захід.
+                                                <span class="credit">Вишуканий дизайн</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>    
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="slide-1"><img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/1493962806590c1036e120a_d92a972b2a722d23ba4bbec1f8e69a8c.jpg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2"><img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/1493962811590c103ba552b_547da055bcf64a8f8ad2151fc8e5add8.jpg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-3"><img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/1493962816590c10409940e_cdbd486d7ca9b0c8986434bcaf7fac5a.jpg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-4"><img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/150159263659807c3c42540_59807baf953061.11006336.jpeg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-5"><img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/150159265259807c4c19fc0_59807bb11458f2.16262427.jpeg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-6"><img src="https://tomato.ua/storage/restaurants/590c103666f6df0e4453e21c/150159264659807c46047e4_59807bafb76830.67626013.jpeg" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+                    <article class="projects__card">
+                        <div class="card">
+                            <div class="content">
+                              <div class="back">
+                                <div class="back-content">
+                                    <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+                                  <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+                                  <div class="cafe-name">Bezbrendu</div>
+                                  <strong>Перегорни мене</strong>
+                                </div>
+                              </div>
+                              <div class="front">
+                                <img src="img/photo-1.png" alt="Card Image" class="card-image">
+                                
+                                <div class="projects__modal">          
+                                </div>
+                                <div class="front-content">
+                                    <span class="projects__subtitle">Кав'ярня</span>
+                                    <p class="projects__description">Кав'ярня «БезBrendu» у центрі Вінниці на Соборній вулиці пропонує широкий вибір кави та європейських десертів. Її інтер'єр сучасний, а також доступна послуга кави на виніс.</p>
+                                  <div class="description">
+                                    <div class="title">
+                                      <p class="title">
+                                        <a href="#" class="projects__button" data-modal-target="#carouselModal2">
+                                          Детальніше<i class="ri-external-link-line"></i>
+                                      </a>
+                                      </p>
+                                      <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                                    </div>
+                                    <p class="card-footer">
+                                        08:00-24:00 &nbsp; | &nbsp; Вінниця, вул. Соборна 43
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </article>
+                    <div id="carouselModal2" class="carousel-modal">
+                      <section>
+                        <div class="container">
+                            <div class="carousel">
+                                <button class="carousel-close" onclick="closeModal()">×</button>
+                              <input type="radio" name="slides2" checked="checked" id="slide-2-1">
+                              <input type="radio" name="slides2" id="slide-2-2">
+                              <input type="radio" name="slides2" id="slide-2-3">
+                              <input type="radio" name="slides2" id="slide-2-4">
+                              <input type="radio" name="slides2" id="slide-2-5">
+                              <input type="radio" name="slides2" id="slide-2-6">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/image/resize/storage/restaurants/588fa98a2fdfa0003327b986/1485810058588fa98a749d1_861a53ebf022274e3a257de74e4bff4e.jpg?w=1200&h=1200" alt="">
+                                            </div>
+                                            <figcaption>
+                                                
+Особливості
+WiFi
+Їжа на винос
+Приймаються кредитнi карти
+
+                                                <span class="credit">два креативні десерти</span>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/1485810062588fa98ee8ede_22b746de548cb1699e5afe539db6f9fd.jpg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                
+Адрес:
+Вінниця, вул. Соборна 43
+Показать на карте
+График работы:
+Сегодня: 08:00-24:00  Открыт сейчас
+Показать график
+Кухня:  Європейська ,  Фаст-фуд .
+                                                <span class="credit">ідеально для перекусу на ходу</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/1485810067588fa9938d0bf_b74ddd8d6f6027f5d54cee28a82335b5.jpg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                бутербродом з хрусткими бабл-вафлями в якості хліба, щедро начиненими листям салату, шматочками помідора та скибочками курки або індички
+                                                <span class="credit">Яскравість та свіжість інгредієнтів</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/149036075558d519b3a0e36_58d519aab760d2.00169170.jpeg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                Фото підкреслює затишну атмосферу кафе.
+                                                <span class="credit">Приємна бесіда в затишній атмосфері</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/149036071558d5198b99262_58d5198390f7d9.17040353.jpeg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                Барвистий десерт з вафлі, щедро прикрашений фруктами, шоколадним соусом, кольоровими цукерками та збитими вершками
+                                                <span class="credit">Підкреслення бренду кафе.</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/149036075058d519aebef47_58d519aa967ca5.85462451.jpeg" alt="">
+                                            </div>
+                                            <figcaption>
+                                                Золотистий вафельний десерт з кулькою морозива, политий шоколадним соусом, прикрашений червоною вишенькою та листком м'яти 
+                                                <span class="credit">Яскравость та свіжість</span>                            
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>    
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="slide-2-1"><img src="https://tomato.ua/image/resize/storage/restaurants/588fa98a2fdfa0003327b986/1485810058588fa98a749d1_861a53ebf022274e3a257de74e4bff4e.jpg?w=1200&h=1200" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2-2"><img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/1485810062588fa98ee8ede_22b746de548cb1699e5afe539db6f9fd.jpg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2-3"><img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/1485810067588fa9938d0bf_b74ddd8d6f6027f5d54cee28a82335b5.jpg"alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2-4"><img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/149036075558d519b3a0e36_58d519aab760d2.00169170.jpeg"alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2-5"><img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/149036071558d5198b99262_58d5198390f7d9.17040353.jpeg"  alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2-6"><img src="https://tomato.ua/storage/restaurants/588fa98a2fdfa0003327b986/149036075058d519aebef47_58d519aa967ca5.85462451.jpeg" alt=""></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+
+                  <article class="projects__card">
+                    <div class="card">
+                        <div class="content">
+                          <div class="back">
+                            <div class="back-content">
+                                <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+                              <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+                              <div class="cafe-name">Назва Кафе</div>
+                              <strong>Hover Me</strong>
+                            </div>
+                          </div>
+                          <div class="front">
+                            <img src="img/photo-1.png" alt="Card Image" class="card-image">
+                            
+                            <div class="projects__modal">          
+                            </div>
+                            <div class="front-content">
+                                <span class="projects__subtitle">Назва</span>
+                                <p class="projects__description">Короткий опис кафе тут</p>
+                              <div class="description">
+                                <div class="title">
+                                  <p class="title">
+                                    <a href="#" class="projects__button" data-modal-target="#carouselModal3">
+                                      Детальніше<i class="ri-external-link-line"></i>
+                                  </a>
+                                  </p>
+                                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                                </div>
+                                <p class="card-footer">
+                                  Best WEb &nbsp; | &nbsp; for students
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </article>
+                <div id="carouselModal3" class="carousel-modal">
+                  <section>
+                    <div class="container">
+                        <div class="carousel">
+                            <button class="carousel-close" onclick="closeModal()">×</button>
+                          <input type="radio" name="slides3" checked="checked" id="slide-3-1">
+                          <input type="radio" name="slides3" id="slide-3-2">
+                          <input type="radio" name="slides3" id="slide-3-3">
+                          <input type="radio" name="slides3" id="slide-3-4">
+                          <input type="radio" name="slides3" id="slide-3-5">
+                          <input type="radio" name="slides3" id="slide-3-6">
+                            <ul class="carousel__slides">
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="img/photo-1.png" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Tim Marshall</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1043/800/450" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Christian Joudrey</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Steve Carter</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Rosan Harmens</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li class="carousel__slide">
+                                    <figure>
+                                        <div>
+                                            <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                        </div>
+                                        <figcaption>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span class="credit">Photo: Annie Spratt</span>                            
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>    
+                            <ul class="carousel__thumbnails">
+                                <li>
+                                    <label for="slide-3-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+              </div>
+
+              <article class="projects__card">
+                <div class="card">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                            <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+                          <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+                          <div class="cafe-name">Назва Кафе</div>
+                          <strong>Hover Me</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+                        <img src="img/photo-1.png" alt="Card Image" class="card-image">
+                        
+                        <div class="projects__modal">          
+                        </div>
+                        <div class="front-content">
+                            <span class="projects__subtitle">Назва</span>
+                            <p class="projects__description">Короткий опис кафе тут</p>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <a href="#" class="projects__button" data-modal-target="#carouselModal4">
+                                  Детальніше<i class="ri-external-link-line"></i>
+                              </a>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                            </div>
+                            <p class="card-footer">
+                              Best WEb &nbsp; | &nbsp; for students
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            <div id="carouselModal4" class="carousel-modal">
+              <section>
+                <div class="container">
+                    <div class="carousel">
+                        <button class="carousel-close" onclick="closeModal()">×</button>
+                      <input type="radio" name="slides4" checked="checked" id="slide-4-1">
+                      <input type="radio" name="slides4" id="slide-4-2">
+                      <input type="radio" name="slides4" id="slide-4-3">
+                      <input type="radio" name="slides4" id="slide-4-4">
+                      <input type="radio" name="slides4" id="slide-4-5">
+                      <input type="radio" name="slides4" id="slide-4-6">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/photo-2.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Tim Marshall</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1043/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Christian Joudrey</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Steve Carter</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Rosan Harmens</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Annie Spratt</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>    
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-4-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+          </div>
+
+          <article class="projects__card">
+            <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                        <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+                      <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+                      <div class="cafe-name">Назва Кафе</div>
+                      <strong>Hover Me</strong>
+                    </div>
+                  </div>
+                  <div class="front">
+                    <img src="img/photo-1.png" alt="Card Image" class="card-image">
+                    
+                    <div class="projects__modal">          
+                    </div>
+                    <div class="front-content">
+                        <span class="projects__subtitle">Назва</span>
+                        <p class="projects__description">Короткий опис кафе тут</p>
+                      <div class="description">
+                        <div class="title">
+                          <p class="title">
+                            <a href="#" class="projects__button" data-modal-target="#carouselModal5">
+                              Детальніше<i class="ri-external-link-line"></i>
+                          </a>
+                          </p>
+                          <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                        </div>
+                        <p class="card-footer">
+                          Best WEb &nbsp; | &nbsp; for students
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </article>
+        <div id="carouselModal5" class="carousel-modal">
+          <section>
+            <div class="container">
+                <div class="carousel">
+                    <button class="carousel-close" onclick="closeModal()">×</button>
+                  <input type="radio" name="slides5" checked="checked" id="slide-5-1">
+                  <input type="radio" name="slides5" id="slide-5-2">
+                  <input type="radio" name="slides5" id="slide-5-3">
+                  <input type="radio" name="slides5" id="slide-5-4">
+                  <input type="radio" name="slides5" id="slide-5-5">
+                  <input type="radio" name="slides5" id="slide-5-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="img/photo-1.png" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Tim Marshall</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1043/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Christian Joudrey</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Steve Carter</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Rosan Harmens</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Annie Spratt</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>    
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-5-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </div>
+
+      <article class="projects__card">
+        <div class="card">
+            <div class="content">
+              <div class="back">
+                <div class="back-content">
+                    <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+                  <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+                  <div class="cafe-name">Назва Кафе</div>
+                  <strong>Hover Me</strong>
+                </div>
+              </div>
+              <div class="front">
+                <img src="img/photo-1.png" alt="Card Image" class="card-image">
+                
+                <div class="projects__modal">          
+                </div>
+                <div class="front-content">
+                    <span class="projects__subtitle">Назва</span>
+                    <p class="projects__description">Короткий опис кафе тут</p>
+                  <div class="description">
+                    <div class="title">
+                      <p class="title">
+                        <a href="#" class="projects__button" data-modal-target="#carouselModal6">
+                          Детальніше<i class="ri-external-link-line"></i>
+                      </a>
+                      </p>
+                      <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                    </div>
+                    <p class="card-footer">
+                      Best WEb &nbsp; | &nbsp; for students
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </article>
+    <div id="carouselModal6" class="carousel-modal">
+      <section>
+        <div class="container">
+            <div class="carousel">
+                <button class="carousel-close" onclick="closeModal()">×</button>
+              <input type="radio" name="slides6" checked="checked" id="slide-6-1">
+              <input type="radio" name="slides6" id="slide-6-2">
+              <input type="radio" name="slides6" id="slide-6-3">
+              <input type="radio" name="slides6" id="slide-6-4">
+              <input type="radio" name="slides6" id="slide-6-5">
+              <input type="radio" name="slides6" id="slide-6-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/photo-3.png" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1043/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1044/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1049/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1052/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-6-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <article class="projects__card">
+    <div class="card">
+        <div class="content">
+          <div class="back">
+            <div class="back-content">
+                <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+              <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+              <div class="cafe-name">Назва Кафе</div>
+              <strong>Hover Me</strong>
+            </div>
+          </div>
+          <div class="front">
+            <img src="img/photo-1.png" alt="Card Image" class="card-image">
+            
+            <div class="projects__modal">          
+            </div>
+            <div class="front-content">
+                <span class="projects__subtitle">Назва</span>
+                <p class="projects__description">Короткий опис кафе тут</p>
+              <div class="description">
+                <div class="title">
+                  <p class="title">
+                    <a href="#" class="projects__button" data-modal-target="#carouselModal7">
+                      Детальніше<i class="ri-external-link-line"></i>
+                  </a>
+                  </p>
+                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                </div>
+                <p class="card-footer">
+                  Best WEb &nbsp; | &nbsp; for students
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</article>
+<div id="carouselModal7" class="carousel-modal">
+  <section>
+    <div class="container">
+        <div class="carousel">
+            <button class="carousel-close" onclick="closeModal()">×</button>
+          <input type="radio" name="slides7" checked="checked" id="slide-7-1">
+          <input type="radio" name="slides7" id="slide-7-2">
+          <input type="radio" name="slides7" id="slide-7-3">
+          <input type="radio" name="slides7" id="slide-7-4">
+          <input type="radio" name="slides7" id="slide-7-5">
+          <input type="radio" name="slides7" id="slide-7-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="img/photo-3.png" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Tim Marshall</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1043/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1044/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1045/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1049/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1052/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-7-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-7-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-7-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-7-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-7-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-7-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</div>
+
+<article class="projects__card">
+    <div class="card">
+        <div class="content">
+          <div class="back">
+            <div class="back-content">
+                <img src="img/photo-2.png" alt="Back Card Image" class="back-card-image">
+              <svg viewBox="-190 -350 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M108.27 135.14C108.384 135.009 108.265 135.083 108.246 135.176C106.237 144.847 99.8055 148.928 90.4218 149.246C86.9295 149.364 83.4318 149.54 79.9401 149.475C67.1586 149.237 54.379 148.84 41.5969 148.647C36.2674 148.566 30.93 149.001 25.6025 148.893C22.9829 148.801 20.387 148.361 17.8827 147.587C11.5326 145.706 6.80174 141.856 4.97974 135.277C3.9086 131.409 2.85586 127.423 2.65568 123.447C1.68386 104.14 0.896231 84.8239 0.292838 65.4987C0.259224 61.2417 0.635739 56.9913 1.41715 52.8065C2.03017 49.0555 3.12363 48.7069 6.78403 48.7024C16.4978 48.6897 26.2116 48.5584 35.9254 48.3086C57.8786 47.752 79.8285 47.0615 101.782 46.5174C106.188 46.4085 106.388 46.8456 107.287 51.0797C107.889 53.9111 108.752 56.6867 109.569 59.7492C109.846 59.7335 110.366 59.7347 110.877 59.6685C130.965 57.0707 144.376 66.3014 148.945 85.9108C150.494 92.5569 151.203 99.3001 150.151 106.07C147.805 121.159 137.914 131.1 122.366 133.859C117.895 134.651 113.293 134.706 108.27 135.14ZM7.79021 56.3474C7.79021 58.2659 7.70816 60.1095 7.80399 61.944C8.36778 72.7394 8.80623 83.5454 9.61024 94.3244C10.4307 105.317 11.3981 116.312 12.7337 127.248C13.6145 134.463 17.8683 138.508 25.0073 139.792C28.4378 140.461 31.9162 140.856 35.4096 140.973C51.5756 141.26 67.7434 141.437 83.9129 141.507C86.9645 141.417 90.008 141.145 93.0268 140.689C96.2554 140.315 97.9776 138.375 98.7061 135.242C100.261 128.56 100.075 121.822 99.7943 115.042C99.1406 99.2258 98.5696 83.4067 98.0813 67.5846C97.931 62.9364 98.0577 58.279 98.0577 53.2049L7.79021 56.3474ZM109.594 127.126C115.415 126.032 121.014 125.534 126.246 123.879C136.041 120.781 141.507 113.69 142.492 103.432C143.157 96.5166 142.045 89.7642 140.223 83.0603C136.144 68.042 119.247 63.2672 108.706 65.9647V73.9248C126.409 77.4159 131.52 86.5455 132.052 98.5762C132.249 102.987 130.674 106.912 128.045 110.428C123.499 116.511 116.872 118.375 109.594 119.192V127.126ZM108.823 110.478C112.06 109.276 114.784 108.509 117.286 107.28C121.349 105.289 123.418 101.836 123.56 97.2943C123.836 88.481 118.428 82.5504 108.823 80.9457V110.478Z" fill="#000000"></path> <path d="M51.7362 2.12827C51.4921 3.51446 51.3995 4.38875 51.1809 5.23017C49.6812 10.9987 50.9722 16.2376 54.1292 21.1411C55.7228 23.6161 57.5921 25.9704 58.7932 28.6233C60.0683 31.4908 60.9871 34.5037 61.5288 37.5948C61.7027 39.3173 61.3493 41.052 60.5154 42.5692C60.0362 43.5163 58.4591 44.5106 57.4667 44.424C56.4743 44.3374 55.4642 43.0326 54.7508 42.0514C54.2939 41.297 54.0914 40.4158 54.1732 39.5376C54.5263 34.0644 52.0302 29.619 49.1614 25.3055C45.7845 20.2274 43.9192 14.7063 44.821 8.59647C45.2757 6.03906 46.0934 3.55972 47.2495 1.23366C47.5901 0.501187 49.2618 -0.0606076 50.203 0.0837867C50.8869 0.189457 51.368 1.5927 51.7362 2.12827Z" fill="#000000"></path> <path d="M67.708 11.3474C68.516 8.197 69.1316 5.21921 70.0708 2.3497C70.6136 0.689164 71.9742 -0.488994 73.8993 0.200817C75.7042 0.845997 75.8295 2.48887 75.3563 4.04767C73.5186 10.1076 75.0347 15.6051 77.6981 21.0862C79.5766 25.0113 81.1887 29.0585 82.5235 33.2002C83.072 35.0863 83.1482 37.0784 82.7454 39.0009C82.5248 40.1344 81.2122 41.6833 80.1929 41.8513C79.2386 42.0082 77.8918 40.7264 76.9768 39.8167C76.4222 39.2667 76.356 38.2238 76.0731 37.4014C74.0903 31.6421 72.0504 25.9011 70.1496 20.1148C69.2045 17.2545 68.5199 14.3009 67.708 11.3474Z" fill="#000000"></path> <path d="M31.209 41.5391C31.2061 41.4289 31.2162 41.3187 31.2392 41.2109C33.2916 35.1549 30.4687 30.6104 27.0262 25.9314C24.6289 22.7749 23.3055 18.9336 23.25 14.9704C23.1945 11.0072 24.4097 7.13036 26.7177 3.908C27.8039 2.5859 29.17 1.52131 30.7174 0.791033C31.3515 0.462864 33.0146 0.851377 33.2942 1.39089C33.6834 2.13714 33.4439 3.4361 33.056 4.31428C32.3596 5.88949 31.1309 7.24477 30.5153 8.84295C28.3421 14.4829 29.0648 19.7415 32.928 24.5124C35.4221 27.5886 37.5689 30.8513 38.1229 34.9192C38.6591 38.8573 37.4285 42.0733 34.7572 43.4818C32.691 44.5766 31.2655 43.7949 31.209 41.5391Z" fill="#000000"></path> </g></svg>
+              <div class="cafe-name">Назва Кафе</div>
+              <strong>Hover Me</strong>
+            </div>
+          </div>
+          <div class="front">
+            <img src="img/photo-1.png" alt="Card Image" class="card-image">
+            
+            <div class="projects__modal">          
+            </div>
+            <div class="front-content">
+                <span class="projects__subtitle">Назва</span>
+                <p class="projects__description">Короткий опис кафе тут</p>
+              <div class="description">
+                <div class="title">
+                  <p class="title">
+                    <a href="#" class="projects__button" data-modal-target="#carouselModal8">
+                      Детальніше<i class="ri-external-link-line"></i>
+                  </a>
+                  </p>
+                  <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                </div>
+                <p class="card-footer">
+                  Best WEb &nbsp; | &nbsp; for students
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</article>
+<div id="carouselModal8" class="carousel-modal">
+  <section>
+    <div class="container">
+        <div class="carousel">
+            <button class="carousel-close" onclick="closeModal()">×</button>
+          <input type="radio" name="slides8" checked="checked" id="slide-8-1">
+          <input type="radio" name="slides8" id="slide-8-2">
+          <input type="radio" name="slides8" id="slide-8-3">
+          <input type="radio" name="slides8" id="slide-8-4">
+          <input type="radio" name="slides8" id="slide-8-5">
+          <input type="radio" name="slides8" id="slide-8-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="img/photo-3.png" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Tim Marshall</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1043/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1044/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1045/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1049/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="https://picsum.photos/id/1052/800/450" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-8-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-8-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-8-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-8-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-8-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-8-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</div>
+                  
+                </section>
+            </div>
+
+            <section class="package"id="offers">
+                <div class="package_container">
+                    <div class="package__row">
+                        <h2 class="package__title">Кавярні з гарячими пропозиціями</h2>
+                    </div>
+
+                    <div class="package__row-2">
+                        <div class="package__block">
+                            <div class="p_block-content">
+                                <h2 class="p_cont_title">Zharcoff</h2>
+                                <p class="p_cont_subtitle">"Майстер-клас бариста" Ціна: від 250₴/особа Тривалість: 2 години</p>
+                                <p class="p_cont_text">Відкрийте для себе мистецтво приготування кави. На вас чекає навчання еспресо та латте арту та багато іншого.</p>
+                                <div class="p_cont_price">
+                                  <button id="calculate-button" class="price__link">Запишіться та отримайте знижку 10%<img src="img/yellow-arrow.svg" alt="arrow"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="package__block">
+                            <div class="p_block-content">
+                                <h2 class="p_cont_title">Coffeelaktika</h2>
+                                <p class="p_cont_subtitle">"Кава тур по місту" Ціна: від 500₴/особа Тривалість: Півдня
+                                </p>
+                                <p class="p_cont_text">Дослідіть кращі кав'ярні міста з екскурсоводом-коннесіром. Включає дегустації вишуканих сортів кави та візити до історичних кавових закладів.</p>
+                                <div class="p_cont_price p-t-2">
+                                    <button class="price__link">Групові знижки для компаній від 4 осіб<img src="img/yellow-arrow.svg" alt="arrow"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__block">
+                            <div class="p_block-content">
+                                <h2 class="p_cont_title">"Ексклюзивна кавова підписка"</h2>
+                                <p class="p_cont_subtitle">від 800₴/місяць Місячна підписка</p>
+                                <p class="p_cont_text">Отримуйте кожен місяць нові сорти свіжозмеленої кави з усього світу прямо до вашої домівки. Включає бонусні кавові аксесуари та рекомендації експертів.</p>
+                                <div class="p_cont_price"id="myForm">
+                                    <button class="price__link">Перші 10 підписників отримають кавовий горнятко в подарунок<img src="img/yellow-arrow.svg" alt="arrow"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="section_form"id="consultation-form">
+              <span class="modal-close">&#10005;</span> 
+              <form id="myForm" class="feed-form" action="Thank-page/index.html">
+                <input required="" placeholder="Name" type="text">
+                <input name="phone" required="" placeholder="Phone number">
+                <input name="email" required="" placeholder="E-mail" type="email">
+                <button type="submit" class="button_submit" ><img src="img/right-arrow.svg" alt="send"></button>
+              </form>
+            </section>
+            <section class="advantages" id="interesting-facts">
+                <div class="advantages__container">
+                    <div class="advantages__row-1">
+                        <h2 class="advantages__title">Цікаві факти</h2>
+                    </div>
+                    <div class="advantages__row-2">
+                        <div class="advantages__block ad-block-1">
+                            <div class="content__title">
+                                <img src="img/01.svg" alt="img-01" class="scale-img">
+                                <h3 class="ad-block__title ad-tit-1">Договір з Кавою</h3>
+                            </div>
+                            <p class="ad-block__text">Кава не просто напій — це культура і традиція, що передається з покоління в покоління. Кожна кав'ярня має свою унікальну історію та філософію.</p>
+                        </div>
+
+                        <div class="advantages__block ad-block-2">
+                            <div class="content__title">
+                                <img src="img/02.svg" alt="img-02" class="scale-img">
+                                <h3 class="ad-block__title ad-tit-2">Контроль Якості</h3>
+                            </div>
+                            <p class="ad-block__text">Вибір кав'ярні — це не лише про смак кави. Це про сервіс, атмосферу та вміння бариста створити ідеальну чашку кави кожного разу.</p>
+                        </div>
+
+                        <div class="advantages__block ad-block-3">
+                            <div class="content__title">
+                                <img src="img/03.svg" alt="img-03" class="scale-img">
+                                <h3 class="ad-block__title ad-tit-3">Кавові Сорти</h3>
+                            </div>
+                            <p class="ad-block__text">Наші кав'ярні пропонують широкий вибір кавових зерен з різних куточків світу. Від класичного еспресо до екзотичного геїша — відчуйте різноманіття смаків та ароматів.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantages__row-3">
+                        <div class="advantages__block ad-block-4">
+                            <div class="content__title">
+                                <img src="img/04.svg" alt="img-04" class="scale-img">
+                                <h3 class="ad-block__title ad-tit-4">Ліквідація Кавових Міфів</h3>
+                            </div>
+                            <p class="ad-block__text-4">Ми розвінчуємо міфи про каву, ділимося науково підтвердженою інформацією про її користь і вплив на здоров'я.</p>
+                        </div>
+
+                        <div class="advantages__block ad-block-5">
+                            <div class="content__title">
+                                <img src="img/05.svg" alt="img-05" class="scale-img">
+                                <h3 class="ad-block__title ad-tit-5">Готовність до Кавових Трендів</h3>
+                            </div>
+                            <p class="ad-block__text">Наші кав'ярні завжди у тренді — від кави з молоком рослинного походження до холодного заварювання.</p>
+                        </div>
+
+                        <div class="advantages__block ad-block-6">
+                            <div class="content__title">
+                                <img src="img/06.svg" alt="img-06" class="scale-img">
+                                <h3 class="ad-block__title ad-tit-6">Кавова Етика</h3>
+                            </div>
+                            <p class="ad-block__text">Ми підтримуємо етичне споживання кави, співпрацюючи з фермерами, які дотримуються принципів сталого розвитку.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews-section"id="reviews-section">
+              <h2 class="advantagesss__title">Відгуки</h2>
+              <div class="reviews-container">
+                  <!-- Example Review -->
+                  <div class="review">
+                      <h3 class="review-title">Шахерезада</h3>
+                      <p class="review-text">Чудесная кухня, большой красивый зал.</p>
+                      <div class="star-rating">
+                        <span class="star" data-rating="1">&#9734;</span>
+                        <span class="star" data-rating="2">&#9734;</span>
+                        <span class="star" data-rating="3">&#9734;</span>
+                        <span class="star" data-rating="4">&#9734;</span>
+                        <span class="star" data-rating="5">&#9734;</span>
+                    </div>                    
+                  </div>
+                  <div class="review">
+                    <h3 class="review-title">Bezbrendu</h3>
+                    <p class="review-text">Берём кофе только здесь. Приветливый персонал, атмосфера как дома,непринуждённо и уютно.</p>
+                    <div class="star-rating">
+                      <span class="star" data-rating="1">&#9734;</span>
+                      <span class="star" data-rating="2">&#9734;</span>
+                      <span class="star" data-rating="3">&#9734;</span>
+                      <span class="star" data-rating="4">&#9734;</span>
+                      <span class="star" data-rating="5">&#9734;</span>
+                  </div>                  
+                </div>
+                <div class="review">
+                  <h3 class="review-title">Ашанті</h3>
+                  <p class="review-text">Очень приятное место, спокойная атмосфера, вкусная кухня. Приятно посидеть с друзьями и любимым!!!</p>
+                  <div class="star-rating">
+                    <span class="star" data-rating="1">&#9734;</span>
+                    <span class="star" data-rating="2">&#9734;</span>
+                    <span class="star" data-rating="3">&#9734;</span>
+                    <span class="star" data-rating="4">&#9734;</span>
+                    <span class="star" data-rating="5">&#9734;</span>
+                </div>
+                
+              </div>
+                  <!-- Add more reviews here -->
+              </div>
+          
+              <div class="review-form">
+                <h2 class="advantagess__title">Залишити відгук</h2>
+                  <form>
+                      <input type="text" placeholder="Назва закладу" required>
+                      <textarea placeholder="Ваш відгук"></textarea>
+                      <div class="star-rating">
+                        <span class="star" data-rating="1">&#9734;</span>
+                        <span class="star" data-rating="2">&#9734;</span>
+                        <span class="star" data-rating="3">&#9734;</span>
+                        <span class="star" data-rating="4">&#9734;</span>
+                        <span class="star" data-rating="5">&#9734;</span>
+                    </div>   
+                      <input type="hidden" name="rating" value="0">                 
+                      <button type="submit">Відправити</button>
+                  </form>
+              </div>
+          </section>
+          
+
+            <section class="start">
+                <div class="start_container">
+                    <div class="start-row-2">
+                        <h3 class="start__text__title">"Кав'ярні Вашого Міста: Все, Що Вам Потрібно Знати з "Кава Поруч" - Відгуки, Рейтинги та Особливості"</h3>
+                        <p class="start__text">Відкрийте для себе неперевершений світ кавових ароматів з "Кава Поруч". Наша платформа - це ваш надійний гід по найкращих кав'ярнях, де ви не тільки відшукаєте ідеальне місце для зустрічі з друзями чи робочих зустрічей, а й дізнаєтесь про унікальні сорти кави, ексклюзивні напої та інноваційні кавові тренди. Завдяки зручному функціоналу нашого сайту, ви з легкістю зможете переглянути відгуки інших відвідувачів, поділитись власними враженнями та навіть знайти спеціальні пропозиції від місцевих кав'ярень.
+                        </p>
+
+                        <h3 class="start__text__title">"Путівник по Кав'ярнях: Досліджуйте, Смакуйте, Поділяйтеся на "Кава Поруч"</h3>
+                        <p class="start__text">"Кава Поруч" пропонує ексклюзивний доступ до всіх кавових закладів вашого міста. Від авторських кав'ярень до затишних куточків для релаксу - у нас є інформація про всі! Дізнайтесь про нові місця першими завдяки нашому блогу, де ми регулярно публікуємо огляди, інтерв'ю з баристами та статті, що розкривають секрети майстерності кавоваріння. На форумі ви зможете обмінюватися думками з однодумцями та знайти найближчу кав'ярню з інтерактивною мапою на нашому сайті.</p>
+
+                        <h3 class="start__text__title">"Ваш Онлайн Гід по Каві: "Кава Поруч" - Відкрийте Найкращі Кав'ярні Неподалік"</h3>
+                        <p class="start__text">Шукаєте ідеальне місце для підзарядки кавою вранці або затишне місце для вечірньої зустрічі? "Кава Поруч" допоможе вам віднайти ідеальну кав'ярню, що відповідає саме вашим уподобанням. З нашим оновленим каталогом кав'ярень ви можете дізнатися не тільки про популярні місця, але й про ті, що тільки з'явилися на карті вашого міста. Завітайте до нас, щоб знайти гарячі пропозиції та не пропустіть майстер-класи від провідних барист.</p>
+
+                        <h3 class="start__text__title">"Дізнайтеся Все про Каву: "Кава Поруч" - Ваш Доступ до Світу Кавових Закладів"</h3>
+                        <p class="start__text">Наш сайт "Кава Поруч" - це більше, ніж просто каталог кав'ярень. Це цілісна платформа, де кожен може знайти інформацію про каву, культуру кавового споживання та найновіші тренди. Від класичних італійських еспресо до сучасних крафтових напоїв - ми прагнемо надати вам найбільш комплексне уявлення про світ кави. Залишайте відгуки, діліться своїми історіями та будьте завжди в курсі подій у кавовій індустрії разом з "Кава Поруч".</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"id="footer">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__logo">
+                        <img src="img/coffee-bean.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="footer__row-2">
+                    <div class="footer-col footer-sm-vis">
+                        <h3 class="footer__title">Юридична адреса</h3>
+                        <p class="footer__text">м.Вінниця, вул.Київська, буд.1, оф.12</p>
+                        <button class="footer__btn" onclick="up()"><img src="img/arrow-top.svg" alt="arrow"></button>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-sm-hidden">
+                            <h3 class="footer__title">Юридична адреса</h3>
+                            <p class="footer__text">м.Вінниця, вул. Київська 91, буд.1, оф.12</p>
+                        </div>
+                        <h3 class="footer__title footer-phone">Телефон</h3>
+                        <p class="footer__text">+38 (095) 189 02 31</p>
+                        <h3 class="footer__title ft-pd-tt">Email</h3>
+                        <p class="footer__text">kavaporuch@gmail.com</p>
+                        <div class="footer-sm-hidden ft-sm-hid">
+                            <h3 class="footer__title">Залишити заявку</h3>
+                        </div>
+                    </div>
+                    <div class="footer-col footer-ord-2">
+                        <h3 class="footer__title">Навігація</h3>
+                        <ul class="footer__list">
+                            <li><a href="" class="active__menu_list">Головна</a></li>
+                            <li><a href="#projects" class="list__item">Каталог кав'ярень</a></li>
+                            <li><a href="#offers" class="list__item">Гарячі пропозиції</a></li>
+                            <li><a href="#interesting-facts" class="list__item">Цікаві факти</a></li>
+                            <li><a href="#reviews-section" class="list__item">Відгуки</a></li>
+                            <li><a href="#footer" class="list__item">Контакти</a></li>
+                        </ul>
+                        <button class="footer__btn btn-sm" onclick="up()"><img src="img/arrow-top.svg" alt="arrow"></button>
+                        <div class="soc__media btn-sm">
+                            <a href="https://www.facebook.com/profile.php?id=100022649712699"><img src="img/logo-facebook.svg" alt=""></a>
+                            <a href="https://www.instagram.com/_vette_/"><img src="img/logo-instagram.svg" alt=""></a>
+                            <a href=""><img src="img/logo-viber-2.svg" alt=""></a>
+                            <a href="https://t.me/nerf_Vettel"><img src="img/logo-telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-col footer-ord-1">
+                        <h3 class="footer__title">Залишити заявку</h3>
+                        <form action="Thank-page/index.html" class="footer__form ft-big" id="myForm">
+                            <input type="text" class="phone__number number__code" name="number-phone" placeholder="+38 (---) --- -- --" onkeypress="return validate(event)" required autocomplete="off" maxlength="13">
+                            <button type="submit" class="button-send"><img src="img/right-arrow.svg" alt="send"></button>
+                        </form>
+
+                        <div class="soc__media">
+                            <a href="https://www.facebook.com/profile.php?id=100022649712699"><img src="img/logo-facebook.svg" alt=""></a>
+                            <a href="https://www.instagram.com/_vette_/"><img src="img/logo-instagram.svg" alt=""></a>
+                            <a href=""><img src="img/logo-viber-2.svg" alt=""></a>
+                            <a href="https://t.me/nerf_Vettel"><img src="img/logo-telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foooter-sm__block">
+                    <form action="Thank-page/index.html" class="footer__form ft-sm">
+                        <input type="text" class="phone__number number__code" name="number-phone" placeholder="+38 (---) --- -- --" onkeypress="return validate(event)" required autocomplete="off" maxlength="13">
+                        <button type="submit" class="button-send"><img src="img/right-arrow.svg" alt="send"></button>
+                    </form>
+                    <button class="footer__btn btn-ft-sm" onclick="up()"><img src="img/arrow-top.svg" alt="arrow"></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        tsParticles.load("particles-js", {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#ffffff"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000"
+      }
+    },
+    opacity: {
+      value: 0.5,
+      random: true, // Make opacity random for each particle
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false
+      }
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: true, // Enable size animation
+        speed: 2, // Slower animation speed for less strain
+        size_min: 0.1,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2, // Slower movement speed
+      direction: "none",
+      random: true, // Random movement for a more natural look
+      straight: false,
+      out_mode: "out",
+      bounce: true, // Enable bounce off the edges
+      attract: {
+        enable: true, // Enable attracting effect
+        rotateX: 3000,
+        rotateY: 3000
+      }
+    }
+  },
+  interactivity: {
+  detect_on: "canvas",
+  events: {
+    onhover: {
+      enable: true,
+      mode: "attract" // Change to 'attract' mode
+    },
+    onclick: {
+      enable: true,
+      mode: "push"
+    },
+    resize: true
+  },
+  modes: {
+    attract: { // Configure the 'attract' mode
+      distance: 200, // Max distance of effect
+      duration: 0.4, // Duration of effect after mouse stops
+      factor: 5, // Speed of particles moving towards the cursor
+      maxSpeed: 2, // Maximum speed of particles
+      speed: 1 // Speed of effect
+    },
+    bubble: {
+      distance: 200,
+      size: 12,
+      duration: 2,
+      opacity: 1,
+      speed: 3
+    },
+    push: {
+      particles_nb: 4
+    },
+    remove: {
+      particles_nb: 2
+    }
+  }
+},
+  retina_detect: true
+});
+
+      </script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
+    
+</body>
+</html>
